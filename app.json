@@ -21,6 +21,11 @@
       "required": false,
       "value": "919074692450"
     },
+    "SPAM_COUNT": {
+      "description": "Enter Number Of Times To Send Spam Message Using .spam Command",
+      "required": false,
+      "value": "10"
+    },
     "STICKER_DATA": {
       "description": "Enter Your Sticker PackName And Author Name",
       "required": false,
