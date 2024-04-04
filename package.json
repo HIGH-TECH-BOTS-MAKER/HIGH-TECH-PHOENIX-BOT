@@ -3,7 +3,7 @@
   "description": "A Simple WhatsApp Bot",
   "version": "1.8.0",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
       "start": "pm2 start . --attach --name Phoenix-MD"
