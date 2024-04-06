@@ -8,8 +8,6 @@ const toBool = (x) => x == "true";
 DATABASE_URL = process.env.DATABASE_URL || "./lib/database.db";
 
 
-let HANDLER = "false";
-
 module.exports = {
   //For Enabling Commands Like AUTO_STATUS_RED Type true For Desenabling Type false
   ANTILINK: toBool(process.env.ANTI_LINK) || false,
@@ -30,7 +28,7 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   LANG: process.env.LANG || "EN",
   //_________________________________________________________________________________________________________________________________
-  HANDLERS: process.env.HANDLER === "false" || '^[.]',
+  HANDLERS: process.env.HANDLER === 'false' ? '^' : process.env.HANDLER === 'null' ? '^' : process.env.HANDLER, 
   //_________________________________________________________________________________________________________________________________
   RMBG_KEY: process.env.RMBG_KEY || false,
   //_________________________________________________________________________________________________________________________________
